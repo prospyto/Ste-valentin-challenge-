@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câlin Éternel - L'Excellence Saint-Valentin 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vibrant-red': '#FF0000',      
+                        'st-val-pink': '#FF1493',      
+                        'romantic-pink': '#FF69B4',    
+                        'passion-red': '#DC143C',      
+                        'pure-white': '#FFFFFF',       
+                        'off-white': '#F5F5F5',        
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'scroll': 'scroll 60s linear infinite',
+                        'pop-in': 'pop-in 0.5s cubic-bezier(0.26, 1.36, 0.74, 1) forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        scroll: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' }
+                        },
+                        'pop-in': {
+                            '0%': { transform: 'scale(0.5) translateY(100px)', opacity: '0' },
+                            '100%': { transform: 'scale(1) translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-off-white">
+
+    <div id="promo-popup" class="fixed bottom-6 right-6 z-[9999] hidden">
+        <div class="bg-pure-white border-4 border-vibrant-red p-6 rounded-[2rem] shadow-[0_20px_50px_rgba(255,0,0,0.3)] max-w-sm animate-pop-in">
+            <div class="text-center">
+                <div class="bg-vibrant-red text-pure-white text-[10px] font-black py-1 px-3 rounded-full inline-block mb-2 uppercase tracking-widest">Offre de dernière minute</div>
+                <h4 class="text-xl font-black text-passion-red italic mb-1 uppercase">Vite ! Plus que...</h4>
+                <div id="countdown" class="text-4xl font-black text-vibrant-red mb-3 tabular-nums">10:00</div>
+                <p class="text-[11px] text-passion-red mb-4 leading-tight font-semibold italic">Profitez de -35% immédiat sur votre Câlin Éternel avant la fin du décompte.</p>
+                <a href="#achat" class="group bg-vibrant-red text-pure-white w-full py-3 rounded-xl font-black uppercase text-xs flex items-center justify-center gap-2 hover:bg-passion-red transition-colors">
+                    <span>En profiter</span>
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"></path></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="relative min-h-screen flex items-center bg-pure-white overflow-hidden border-b-8 border-romantic-pink">
+        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20">
+            <div class="z-10 text-center lg:text-left">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black italic uppercase leading-none mb-8 text-vibrant-red" id="hero-title">
+                    </h1>
+                <p class="text-lg md:text-xl text-passion-red mb-10 max-w-xl font-light leading-relaxed">
+                    Parce que vous ne pouvez pas toujours être là pour la serrer dans vos bras, offrez-lui une présence constante qui porte votre amour. Le Câlin Éternel est bien plus qu'une peluche : c'est votre ambassadeur de tendresse.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#achat" class="group bg-vibrant-red hover:bg-passion-red text-pure-white font-black py-5 px-10 rounded-full transition-all shadow-xl flex items-center justify-center gap-4 uppercase tracking-tighter scale-110">
+                        <span>Offrir ce bonheur</span>
+                        <svg class="w-8 h-8 heart-btn-draw" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center relative">
+                <div class="animate-float p-6 bg-romantic-pink rounded-[4rem] relative">
+                    <div class="absolute -top-4 -left-4 bg-st-val-pink text-pure-white p-4 rounded-2xl rotate-12 font-black shadow-lg z-20">Best-Seller 2026</div>
+                    <img src="img1.jpg" alt="Câlin Éternel" class="rounded-[3rem] shadow-2xl border-8 border-pure-white rotate-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-off-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl font-black mb-16 text-center italic uppercase text-vibrant-red leading-tight">Pourquoi est-ce le <span class="text-st-val-pink">Cadeau Ultime</span> ?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="bg-pure-white p-10 rounded-[3rem] border-4 border-romantic-pink shadow-xl text-center transform hover:scale-105 transition-transform">
+                    <i class="fas fa-heart text-vibrant-red text-5xl mb-6"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase text-passion-red">Ancrage Émotionnel</h3>
+                    <p class="text-st-val-pink leading-relaxed font-medium">Des études prouvent que serrer un objet doux réduit le cortisol. Offrez-lui un remède naturel contre le manque de vous.</p>
+                </div>
+                <div class="bg-pure-white p-10 rounded-[3rem] border-4 border-st-val-pink shadow-xl text-center transform hover:scale-105 transition-transform">
+                    <i class="fas fa-hand-holding-heart text-st-val-pink text-5xl mb-6"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase text-vibrant-red">Douceur Sensorielle</h3>
+                    <p class="text-passion-red leading-relaxed font-medium">Sa texture "Cloud-Touch" a été développée pour imiter la sensation d'apaisement d'une étreinte humaine sincère.</p>
+                </div>
+                <div class="bg-pure-white p-10 rounded-[3rem] border-4 border-vibrant-red shadow-xl text-center transform hover:scale-105 transition-transform">
+                    <i class="fas fa-infinity text-passion-red text-5xl mb-6"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase text-st-val-pink">Mémoire Tactile</h3>
+                    <p class="text-vibrant-red leading-relaxed font-medium">Contrairement à un bijou qu'on oublie, la peluche s'invite dans ses moments de repos, là où elle pense le plus à vous.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-pure-white">
+        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1">
+                <h2 class="text-5xl font-black mb-10 uppercase text-vibrant-red italic">Une Conception <span class="text-st-val-pink">Premium</span></h2>
+                <p class="mb-8 text-passion-red font-light text-lg italic">Nous ne faisons aucun compromis sur la qualité, car votre amour mérite l'excellence.</p>
+                <ul class="space-y-8">
+                    <li class="flex items-center gap-6 p-6 bg-off-white rounded-2xl border-l-8 border-vibrant-red shadow-sm">
+                        <i class="fas fa-leaf text-vibrant-red text-2xl"></i>
+                        <div>
+                            <p class="text-passion-red font-black uppercase text-sm">Coton Organique Certifié</p>
+                            <p class="text-xs text-romantic-pink">Cultivé sans pesticides, pour une peau respectée et un toucher soyeux.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-6 p-6 bg-off-white rounded-2xl border-l-8 border-st-val-pink shadow-sm">
+                        <i class="fas fa-gem text-st-val-pink text-2xl"></i>
+                        <div>
+                            <p class="text-passion-red font-black uppercase text-sm">Broderie Haute Précision</p>
+                            <p class="text-xs text-romantic-pink">Le cœur central est brodé avec 12 000 points de fil de soie Rouge Passion.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-6 p-6 bg-off-white rounded-2xl border-l-8 border-romantic-pink shadow-sm">
+                        <i class="fas fa-arrows-alt text-romantic-pink text-2xl"></i>
+                        <div>
+                            <p class="text-passion-red font-black uppercase text-sm">Format "Perfect Hug"</p>
+                            <p class="text-xs text-romantic-pink">45cm d'ergonomie pure, idéale pour reposer sa tête ou l'entourer de ses bras.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="order-1 lg:order-2 flex justify-center">
+                <img src="img2.jpg" alt="Détails Peluche" class="rounded-[3rem] shadow-2xl border-4 border-romantic-pink rotate-2 max-w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <section id="achat" class="py-24 bg-off-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto bg-pure-white rounded-[4rem] shadow-2xl overflow-hidden flex flex-col md:flex-row border-8 border-romantic-pink">
+                <div class="md:w-1/2 bg-romantic-pink/20 p-12 flex items-center justify-center relative">
+                    <img src="img3.jpg" alt="Offre Spéciale" class="rounded-3xl shadow-2xl">
+                    <div class="absolute bottom-16 right-16 bg-vibrant-red text-pure-white w-24 h-24 rounded-full flex flex-col items-center justify-center font-black rotate-12 shadow-xl border-4 border-pure-white">
+                        <span class="text-xs uppercase">Seulement</span>
+                        <span class="text-2xl">39€</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2 p-12 md:p-20 flex flex-col justify-center">
+                    <span class="bg-vibrant-red text-pure-white px-6 py-2 rounded-full text-xs font-black uppercase tracking-widest mb-6 w-fit animate-pulse">Stock Limité Saint-Valentin</span>
+                    <h3 class="text-5xl md:text-6xl font-black mb-8 text-passion-red uppercase italic leading-none">Câlin Éternel <span class="text-st-val-pink text-2xl block mt-2">Édition Collector 2026</span></h3>
+                    <p class="text-passion-red mb-10 font-medium italic">Inclut un certificat d'authenticité et un emballage parfumé à la rose.</p>
+                    <a href="#" class="group bg-vibrant-red hover:bg-passion-red text-pure-white text-center font-black py-8 rounded-3xl text-3xl transition-all shadow-2xl flex items-center justify-center gap-6 uppercase transform hover:-translate-y-2">
+                        <span>Sécuriser mon Cœur</span>
+                        <svg class="w-10 h-10 heart-btn-draw" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reassurance-section" class="py-20 bg-vibrant-red text-pure-white border-y-8 border-passion-red">
+        <div class="container mx-auto px-6">
+            <h2 class="text-center text-2xl font-black uppercase italic mb-12 tracking-widest underline decoration-pure-white decoration-4 underline-offset-8">Achetez l'esprit tranquille</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center">
+                <div class="group">
+                    <div class="bg-pure-white text-vibrant-red w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl shadow-lg group-hover:rotate-12 transition-transform"><i class="fas fa-shipping-fast"></i></div>
+                    <p class="font-black uppercase text-xs tracking-tighter">Livraison Éclat 48h</p>
+                    <p class="text-[9px] mt-2 opacity-80 uppercase font-bold">Partout en Europe</p>
+                </div>
+                <div class="group">
+                    <div class="bg-pure-white text-vibrant-red w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl shadow-lg group-hover:rotate-12 transition-transform"><i class="fas fa-lock"></i></div>
+                    <p class="font-black uppercase text-xs tracking-tighter">Paiement Blindé</p>
+                    <p class="text-[9px] mt-2 opacity-80 uppercase font-bold">Cryptage SSL 256 bits</p>
+                </div>
+                <div class="group">
+                    <div class="bg-pure-white text-vibrant-red w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl shadow-lg group-hover:rotate-12 transition-transform"><i class="fas fa-smile-beam"></i></div>
+                    <p class="font-black uppercase text-xs tracking-tighter">100% Satisfait ou Remboursé</p>
+                    <p class="text-[9px] mt-2 opacity-80 uppercase font-bold">Pendant 30 jours</p>
+                </div>
+                <div class="group">
+                    <div class="bg-pure-white text-vibrant-red w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl shadow-lg group-hover:rotate-12 transition-transform"><i class="fas fa-box-open"></i></div>
+                    <p class="font-black uppercase text-xs tracking-tighter">Coffret Luxueux Inclus</p>
+                    <p class="text-[9px] mt-2 opacity-80 uppercase font-bold">Prêt à être offert</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-pure-white overflow-hidden">
+        <div class="container mx-auto px-6 text-center mb-16">
+            <h2 class="text-5xl md:text-7xl font-black italic uppercase text-vibrant-red">Leurs Mots <span class="text-st-val-pink underline">D'Amour</span></h2>
+            <p class="mt-4 text-passion-red font-bold uppercase text-xs tracking-[0.5em]">Rejoignez plus de 15 000 amoureux comblés</p>
+        </div>
+        
+        <div class="flex animate-scroll gap-8 px-4" style="width: max-content;">
+            <div class="bg-off-white p-10 rounded-[3rem] w-[400px] border-4 border-romantic-pink shadow-xl relative shrink-0">
+                <div class="flex text-vibrant-red mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="italic text-passion-red font-medium mb-6">"Mon compagnon me l'a offerte pour nos 2 ans. Elle ne quitte plus mon lit, c'est un vrai nuage !"</p>
+                <div class="font-black text-st-val-pink uppercase text-sm">— Clémence D.</div>
+            </div>
+            <div class="bg-off-white p-10 rounded-[3rem] w-[400px] border-4 border-vibrant-red shadow-xl relative shrink-0">
+                <div class="flex text-vibrant-red mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="italic text-passion-red font-medium mb-6">"Incroyable ! La livraison était super rapide et la peluche est encore plus belle en vrai."</p>
+                <div class="font-black text-st-val-pink uppercase text-sm">— Marc-Antoine P.</div>
+            </div>
+            <div class="bg-st-val-pink p-10 rounded-[3rem] w-[400px] text-pure-white shadow-xl relative shrink-0">
+                <div class="flex text-pure-white mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="italic font-medium mb-6">"Idéal pour les relations à distance. Je l'ai envoyée à ma femme, elle en pleurait de joie."</p>
+                <div class="font-black text-off-white uppercase text-sm">— Julien B.</div>
+            </div>
+            <div class="bg-off-white p-10 rounded-[3rem] w-[400px] border-4 border-romantic-pink shadow-xl relative shrink-0">
+                <div class="flex text-vibrant-red mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="italic text-passion-red font-medium mb-6">"Mon compagnon me l'a offerte pour nos 2 ans. Elle ne quitte plus mon lit, c'est un vrai nuage !"</p>
+                <div class="font-black text-st-val-pink uppercase text-sm">— Clémence D.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-romantic-pink text-pure-white text-center relative overflow-hidden">
+        <div class="container mx-auto px-6 max-w-4xl relative z-10">
+            <h2 class="text-6xl md:text-8xl font-black mb-10 italic uppercase leading-tight">Ne laissez pas sa place <span class="text-vibrant-red">Vide</span></h2>
+            <p class="text-2xl mb-14 font-bold uppercase tracking-tighter italic opacity-90">Chaque soir sans Câlin Éternel est une occasion manquée de lui montrer que vous l'aimez.</p>
+            <a href="#achat" class="group bg-pure-white text-vibrant-red font-black py-10 px-20 rounded-full text-4xl transition-all shadow-[0_20px_60px_rgba(255,255,255,0.4)] flex items-center justify-center gap-8 uppercase inline-flex transform hover:scale-110">
+                <span>Je l'offre maintenant</span>
+                <svg class="w-12 h-12 heart-btn-draw !stroke-vibrant-red" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-16 bg-passion-red text-pure-white text-center border-t-8 border-vibrant-red">
+        <div class="text-3xl font-black italic uppercase mb-6 tracking-tighter">Câlin Éternel <span class="text-romantic-pink">❤</span></div>
+        <p class="text-[12px] opacity-70 uppercase tracking-[0.8em] font-bold">Palette Officielle Challenge Saint-Valentin 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

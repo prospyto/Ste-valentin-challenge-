@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&family=Poppins:wght@300;400;700;900&display=swap');
+
+body { 
+    font-family: 'Poppins', sans-serif; 
+    scroll-behavior: smooth; 
+    background-color: #F5F5F5; 
+    color: #DC143C; 
+    overflow-x: hidden; 
+}
+
+h1, h2, h3 { 
+    font-family: 'Playfair Display', serif; 
+}
+
+.word-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 0.2em;
+}
+
+.heart-bg-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 130%;
+    height: 130%;
+    z-index: -1;
+    fill: none;
+    stroke: #FF69B4;
+    stroke-width: 2;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    opacity: 0.4;
+}
+
+@keyframes drawHeart {
+    0% { stroke-dashoffset: 200; opacity: 0; }
+    30% { stroke-dashoffset: 0; opacity: 0.6; }
+    70% { stroke-dashoffset: 0; opacity: 0.6; }
+    100% { stroke-dashoffset: -200; opacity: 0; }
+}
+
+.heart-btn-draw {
+    fill: none;
+    stroke: white;
+    stroke-width: 3;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    transition: 0.5s;
+}
+
+.group:hover .heart-btn-draw {
+    stroke-dashoffset: 0;
+}
+
+/* Testimonial slider hover stop */
+.animate-scroll:hover {
+    animation-play-state: paused;
+}
