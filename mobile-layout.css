@@ -1,0 +1,41 @@
+/* --- GESTION DE LA STRUCTURE MOBILE --- */
+
+@media screen and (max-width: 768px) {
+    /* 1. Ajustement du Popup d'offre (image_393c22.png) */
+    .animate-pop-in {
+        width: 90% !important; /* Prend presque toute la largeur pour être lisible */
+        max-width: none !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important; /* Centre parfaitement le popup */
+        bottom: 20px !important; /* Le place en bas pour l'accessibilité du pouce */
+        top: auto !important;
+    }
+
+    /* 2. Adaptation du texte dans le popup */
+    .animate-pop-in h2, .animate-pop-in p {
+        font-size: 0.9rem !important;
+        line-height: 1.2 !important;
+    }
+
+    /* 3. Empilement des sections Flex (Hero et Achat) */
+    .container, .flex-col-reverse, .flex-col {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* 4. Ajustement des boutons pour mobile */
+    .group, a[href="#achat"] {
+        width: 100% !important;
+        max-width: 300px !important;
+        padding: 15px !important;
+        margin: 10px auto !important;
+    }
+
+    /* 5. Sécurité pour les images */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
