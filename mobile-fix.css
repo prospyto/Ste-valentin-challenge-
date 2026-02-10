@@ -1,0 +1,64 @@
+/* --- OPTIMISATION RESPONSIVE GLOBALE --- */
+
+/* Empêche le défilement horizontal parasite sur mobile */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* 1. RÉOPTIMISATION DU TITRE (Problème des cœurs SVG) */
+#hero-title {
+    display: flex !important;
+    flex-wrap: wrap !important; /* Force les mots à revenir à la ligne */
+    justify-content: center !important;
+    gap: 10px 5px !important; /* Espace vertical et horizontal entre les mots */
+    text-align: center !important;
+    padding: 0 10px;
+}
+
+/* 2. AJUSTEMENT DU POPUP (Ergonomie mobile) */
+@media (max-width: 768px) {
+    #promo-popup {
+        top: auto !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        left: 20px !important;
+    }
+
+    #promo-popup > div {
+        max-width: 100% !important;
+        animation: slideUp 0.5s ease-out !important;
+    }
+
+    /* Redimensionnement des textes Hero sur mobile */
+    #hero-title {
+        font-size: 1.75rem !important; /* Plus lisible sur smartphone */
+    }
+
+    /* Ajustement de l'image Hero */
+    .animate-float img {
+        max-width: 280px !important;
+        height: auto !important;
+    }
+}
+
+/* 3. FIX POUR LES MOTS AVEC CŒURS */
+.word-container {
+    display: inline-flex !important;
+    align-items: center;
+    position: relative;
+    white-space: nowrap; /* Empêche le mot de se couper en deux */
+}
+
+.heart-bg-svg {
+    width: 140% !important;
+    height: 140% !important;
+    pointer-events: none; /* Le cœur ne doit pas bloquer le clic sur le texte */
+}
+
+/* Animation fluide pour le popup mobile */
+@keyframes slideUp {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
